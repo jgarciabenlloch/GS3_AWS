@@ -1,6 +1,6 @@
-# GS3_AWS
+# GS3-CLOUD_EC2-AWS
 Creación de servidor GNS3 en una EC2
-En la configuración base se pone como ejemplo una topología de red formada por un router la propia instacia EC2 y dos redes. La red lan y la red dmz. 
+En la configuración base se pone como ejemplo una topología de red formada por un router, que es la propia instacia EC2, funcionando en GNS3 como CLOUD  y dos redes. La red lan y la red dmz. 
 Desde GNS3 en la gui WEB se conectan las redes a las interfaces tap correspondientes en la CLOUD de gns3.
 ## Tutorial breve: EC2 + GNS3 + TAP + NAT + Docker (Ubuntu 24.04.4)
 
