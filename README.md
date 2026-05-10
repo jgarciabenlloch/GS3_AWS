@@ -1,7 +1,5 @@
 # 1. Qué se está construyendo realmente (visión de arquitectura)
 
-Este proyecto no es “solo instalar GNS3 en una EC2”. Lo que realmente se está construyendo es un **entorno de simulación de red avanzada** donde:
-
 * La **instancia EC2 en AWS actúa como un nodo de red**
 * GNS3 se usa como **orquestador de topologías virtuales**
 * Las redes virtuales internas (LAN y DMZ) se conectan al mundo real mediante **interfaces TAP**
@@ -69,7 +67,7 @@ Y se les asignan redes:
 * LAN → `10.10.10.0/24`
 * DMZ → `192.168.101.0/24`
 
-## 🔴 Qué significa esto a nivel de ingeniería
+## Qué significa esto
 
 Una interfaz TAP es:
 
@@ -83,7 +81,7 @@ Esto permite que:
 
 ---
 
-# 3. GNS3 CLOUD (concepto clave del proyecto)
+# 3. GNS3 CLOUD
 
 En GNS3, el elemento **CLOUD** representa:
 
@@ -94,7 +92,7 @@ En este caso:
 * CLOUD = EC2 Linux host
 * CLOUD se conecta a `tap-lan` y `tap-dmz`
 
-## 🔴 Importante (punto que pedías destacar)
+## Importante 
 
 Este diseño usa CLOUD, y eso implica:
 
@@ -188,7 +186,7 @@ Ejemplo típico:
 
 Este es el punto más conceptual.
 
-## 🔴 Uso de CLOUD en GNS3 implica:
+## Uso de CLOUD en GNS3 implica:
 
 * No hay conectividad automática
 * No hay “router virtual interno” entre redes
